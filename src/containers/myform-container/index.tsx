@@ -5,12 +5,16 @@ import { useAppDispatch } from '../../store/redux-hooks'
 import { weatherActions } from '../../store/weather-slice'
 import { ReqParam } from '../../store/weather-slice'
 
+
+
 const useStyles = makeStyles({
     mainContainer: {
         display: 'flex',
         justifyContent: 'center'
     }
 })
+
+
 
 export default function MyFormContainer() {
     const styles = useStyles()
@@ -21,7 +25,6 @@ export default function MyFormContainer() {
     })
 
     const dispatch = useAppDispatch()
-
 
     useEffect(() => {
         console.log(state)

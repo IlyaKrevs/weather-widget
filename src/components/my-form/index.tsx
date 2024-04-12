@@ -8,6 +8,8 @@ import {
 } from '@fluentui/react-components'
 import MyInput from '../my-input';
 
+
+
 const useStyles = makeStyles({
     mainContainer: {
         display: 'flex',
@@ -23,6 +25,8 @@ const useStyles = makeStyles({
     }
 })
 
+
+
 interface IMyForm {
     inputsArr: InputProps[],
     btnObj: {
@@ -31,6 +35,8 @@ interface IMyForm {
     },
     inputCallBack: (value: string, name: string | undefined) => void
 }
+
+
 
 export default function MyForm(props: IMyForm) {
 
